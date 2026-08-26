@@ -1,0 +1,54 @@
+name: CASE//LENS checkpoint
+description: Plan and verify one bounded implementation checkpoint
+title: "[CHECKPOINT] "
+labels: [checkpoint]
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      placeholder: Shahad or Zahra
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Branch
+      placeholder: foundation/shared-contracts
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List prerequisite decisions, Issues, or merged checkpoints.
+    validations:
+      required: true
+  - type: textarea
+    id: allowed_paths
+    attributes:
+      label: Allowed paths
+      description: List the exact owned or approved paths for this checkpoint.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Use verifiable, checkpoint-specific criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification commands
+      description: Include offline commands and required manual checks.
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Blockers and contract risks
+      description: Record blockers, ownership conflicts, and proposed contract changes.
+    validations:
+      required: false

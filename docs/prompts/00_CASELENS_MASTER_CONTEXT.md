@@ -7,7 +7,7 @@ coding_assistants: "Shahad uses Codex; teammate uses Claude Code"
 interface: "Streamlit"
 orchestration: "LangGraph"
 validation: "Pydantic"
-status: "v1.1 — Madoff case revision; implementation decisions frozen; Zahra GitHub username pending"
+status: "v1.1 — Madoff case revision; implementation decisions frozen; team identities confirmed"
 language: "English engineering prompts; bilingual Arabic/English product"
 ---
 
@@ -33,7 +33,7 @@ Fill this table together before either coding track implements live data, model 
 | Project name | `CASE//LENS — Beyond the Verdict` | Repository and presentation |
 | Shahad GitHub username | `ShahadW95` | Repository setup |
 | Teammate name | `Zahra` | Repository setup |
-| Teammate GitHub username | `[ZAHRA_GITHUB_PENDING]` | Add collaborator/assign Issues |
+| Teammate GitHub username | `zaa330` | Add collaborator/assign Issues |
 | Repository URL | `https://github.com/ShahadW95/caselens-agentic-capstone` (planned) | First clone |
 | Selected closed case | `United States v. Bernard L. Madoff — BLMIS Ponzi-scheme criminal case` | Case data implementation |
 | Case ID | `US_SDNY_09CR00213_DC` | All data and citations |
@@ -1027,7 +1027,7 @@ Create these issues:
 
 | ID | Issue | Owner | Dependency | Completion evidence |
 |---|---|---|---|---|
-| D0 | Record frozen case, Gemini models, bilingual UI, team, and pending Zahra username | Both | None | Decision table complete except collaborator username |
+| D0 | Record frozen case, Gemini models, bilingual UI, and team identities | Both | None | Decision table complete |
 | A0 | Repository guardrails, CI, schemas, protocols | Shahad | D0 partly | Foundation PR + tests |
 | B0 | Curate source manifest and case research plan | Teammate | D0 case | Source review PR |
 | A1 | Typed state, memory, supervisor routing with fakes | Shahad | A0 | Routing tests |
@@ -1139,7 +1139,7 @@ SAFE NEXT STEP
 
 # 20. Release definition of done
 
-- [ ] Decision table contains real implementation values; Zahra's GitHub username may remain pending only until collaborator setup.
+- [ ] Decision table contains real implementation values and collaborator setup is confirmed.
 - [ ] Selected case is closed and source manifest passes human review.
 - [ ] One Supervisor and four specialist roles are implemented with distinct contracts.
 - [ ] Mode-dependent delegation is visible.

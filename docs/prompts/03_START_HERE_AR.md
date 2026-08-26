@@ -36,7 +36,7 @@ Embedding: gemini-embedding-2 / 768 dimensions
 UI: bilingual; Arabic default with English toggle
 Shahad GitHub: ShahadW95
 Teammate: Zahra
-Zahra GitHub: PENDING
+Zahra GitHub: zaa330
 Repository: https://github.com/ShahadW95/caselens-agentic-capstone (planned)
 Demo: target 6 minutes; allowed 5–7
 Deployment: yes, Streamlit Community Cloud after local MVP passes
