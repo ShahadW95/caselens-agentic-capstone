@@ -1,0 +1,138 @@
+{
+  "case_id": "US_SDNY_09CR00213_DC",
+  "case_title": "United States v. Bernard L. Madoff",
+  "docket": "1:09-cr-00213-DC",
+  "jurisdiction": "United States adversarial common-law system; federal criminal proceeding in the U.S. District Court for the Southern District of New York (S.D.N.Y.)",
+  "case_status": "CLOSED_CRIMINAL_GUILTY_PLEA",
+  "source_pack_cutoff": "2026-02-27",
+  "manifest_version": "0.1.0",
+  "last_reviewed": "2026-08-26",
+  "sources": [
+    {
+      "source_id": "SRC_DOJ_SDNY_CASEPAGE",
+      "title": "United States v. Bernard L. Madoff and Related Cases",
+      "publisher": "DOJ SDNY Victim-Witness Services",
+      "source_type": "GOVERNMENT_CASE_PAGE",
+      "source_tier": "A",
+      "url": "https://www.justice.gov/usao-sdny/programs/victim-witness-services/united-states-v-bernard-l-madoff-and-related-cases",
+      "use": "primary case status/charges/plea/sentencing facts",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_FBI_HISTORY",
+      "title": "Bernie Madoff case history and mechanism overview",
+      "publisher": "FBI",
+      "source_type": "GOVERNMENT_HISTORICAL_SUMMARY",
+      "source_tier": "B",
+      "url": "https://www.fbi.gov/history/cases-and-criminals/bernie-madoff",
+      "use": "Ponzi mechanism narrative",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SEC_2008_CIVIL_CHARGE",
+      "title": "SEC initial civil charge against Madoff and BLMIS",
+      "publisher": "SEC",
+      "source_type": "REGULATORY_ENFORCEMENT_ACTION",
+      "source_tier": "A",
+      "url": "https://www.sec.gov/news/press/2008/2008-293.htm",
+      "date": "2008-12-11",
+      "use": "start of SEC_ENFORCEMENT proceeding",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SEC_OIG_REPORT",
+      "title": "Investigation of the SEC's failure to uncover the Madoff Ponzi scheme",
+      "publisher": "SEC OIG",
+      "source_type": "OVERSIGHT_INVESTIGATION_REPORT",
+      "source_tier": "A",
+      "url": "https://www.sec.gov/oig/oig-reports-investigation-failure-madoff-ponzi-scheme",
+      "use": "documented complaints/red flags/missed opportunities",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SEC_OIG_TESTIMONY",
+      "title": "SEC OIG testimony summarizing complaints, examinations, and missed opportunities",
+      "publisher": "SEC OIG",
+      "source_type": "CONGRESSIONAL_TESTIMONY",
+      "source_tier": "A",
+      "url": "https://www.sec.gov/news/testimony/2009/ts091009hdk.htm",
+      "date": "2009-09-10",
+      "use": "REGULATORY track timeline detail",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SEC_2009_FABRICATED_RECORDS",
+      "title": "SEC action describing fabricated books and computer-generated trading records",
+      "publisher": "SEC",
+      "source_type": "REGULATORY_ENFORCEMENT_ACTION",
+      "source_tier": "A",
+      "url": "https://www.sec.gov/news/press/2009/2009-243.htm",
+      "use": "evidence of fabricated statements/records",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SEC_2009_AUDITOR_ACTION",
+      "title": "SEC action concerning the purported BLMIS auditor",
+      "publisher": "SEC",
+      "source_type": "REGULATORY_ENFORCEMENT_ACTION",
+      "source_tier": "A",
+      "url": "https://www.sec.gov/news/press/2009/2009-60.htm",
+      "use": "related-party accountability; supports \"did not act completely alone\" nuance",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_FINRA_TESTIMONY",
+      "title": "FINRA testimony describing Madoff's NASD/NASDAQ roles",
+      "publisher": "FINRA",
+      "source_type": "CONGRESSIONAL_TESTIMONY",
+      "source_tier": "A",
+      "url": "https://www.finra.org/media-center/speeches-testimony/testimony-committee-banking-housing-and-urban-affairs",
+      "use": "precise description of private industry/SRO roles, not government official",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SIPC_2018_RELEASE",
+      "title": "SIPC principal-loss and recovery context",
+      "publisher": "SIPC",
+      "source_type": "REGULATORY_PRESS_RELEASE",
+      "source_tier": "A",
+      "url": "https://www.sipc.org/news-and-media/news-releases/20180705",
+      "use": "estimated principal loss figure (~USD 17.5B)",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_SIPC_2026_DISTRIBUTION",
+      "title": "SIPC distribution update",
+      "publisher": "SIPC",
+      "source_type": "REGULATORY_PRESS_RELEASE",
+      "source_tier": "A",
+      "url": "https://www.sipc.org/news-and-media/news-releases/20260227",
+      "date": "2026-02-27",
+      "use": "most recent RECOVERY/DISTRIBUTION status; also source-pack cutoff",
+      "language": "en"
+    },
+    {
+      "source_id": "SRC_DOJ_VICTIM_FUND",
+      "title": "DOJ Madoff Victim Fund final-distribution summary",
+      "publisher": "DOJ",
+      "source_type": "GOVERNMENT_PRESS_RELEASE",
+      "source_tier": "A",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-departments-10th-distribution-brings-total-provided-over-43b-nearly-full-recovery",
+      "use": "DOJ_VICTIM_FUND distribution figures",
+      "language": "en"
+    }
+  ],
+  "excluded_categories": [
+    "dramatizations",
+    "podcasts",
+    "unsourced biographies",
+    "social-media theories",
+    "personality diagnosis",
+    "sensational victim stories"
+  ],
+  "notes": [
+    "The ~USD 65 billion figure refers to fictitious account-statement balances, not cash placed with Madoff or a single verified loss amount; never present interchangeably with the ~USD 17.5B estimated principal loss (SRC_SIPC_2018_RELEASE).",
+    "Criminal case (CRIMINAL_CASE) is CLOSED as of 2009-06-29 sentencing. SIPA liquidation / DOJ Victim Fund recovery (SIPA_LIQUIDATION, DOJ_VICTIM_FUND) are ONGOING/POST_CONVICTION_CONTEXT as of the 2026-02-27 cutoff and must carry independent ProceedingStatus values.",
+    "Madoff held private securities-industry and SRO roles (NASD/NASDAQ) and SEC advisory-committee participation; never a government official — do not characterize institutional access as bribery, conspiracy, or government employment absent a cited source."
+  ]
+}
