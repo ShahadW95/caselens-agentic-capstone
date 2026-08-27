@@ -1,0 +1,24 @@
+{
+  "case_id": "US_SDNY_09CR00213_DC",
+  "case_title": "Fixture Case",
+  "docket": "0:00-cr-00000",
+  "jurisdiction": "Fixture jurisdiction",
+  "case_status": "CLOSED_FIXTURE",
+  "source_pack_cutoff": "2026-08-27",
+  "manifest_version": "0.0.1-fixture",
+  "last_reviewed": "2026-08-27",
+  "sources": [
+    {
+      "source_id": "FIX_SRC_A",
+      "title": "Fixture Source A",
+      "publisher": "Fixture Publisher",
+      "source_type": "FIXTURE_TYPE",
+      "source_tier": "A",
+      "url": "https://example.invalid/fixture-a",
+      "use": "fixture",
+      "language": "en"
+    }
+  ],
+  "excluded_categories": [],
+  "notes": []
+}

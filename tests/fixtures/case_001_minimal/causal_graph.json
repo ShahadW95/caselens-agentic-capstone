@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "node_id": "FIX_CN_1",
+      "node_type": "EVENT",
+      "reference_id": "FIX_EVT_1",
+      "label": "Fixture node",
+      "source_ids": ["FIX_SRC_A"]
+    }
+  ],
+  "edges": [],
+  "allowed_changes": [
+    {
+      "change_id": "FIX_CHG_1",
+      "target_node_id": "FIX_CN_1",
+      "label": "Fixture change",
+      "description": "Fixture description.",
+      "direct_effects": [
+        {"node_id": "FIX_CN_1", "description": "Fixture direct effect."}
+      ],
+      "downstream_possible_effects": ["A fixture effect may occur."],
+      "unchanged_facts": [
+        {"text": "A fixture unchanged fact.", "source_ids": ["FIX_SRC_A"]}
+      ],
+      "unknowns": ["A fixture unknown."],
+      "mandatory_hypothetical_disclaimer": "This is a bounded fixture hypothetical."
+    }
+  ]
+}

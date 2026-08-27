@@ -1,0 +1,15 @@
+[
+  {
+    "claim_id": "FIX_CLAIM_1",
+    "claim_text": "A minimal fixture claim.",
+    "speaker_or_party": "unknown",
+    "context": "Fixture context.",
+    "status": "SUPPORTED",
+    "supporting_evidence_ids": ["FIX_EVID_1"],
+    "contradicting_evidence_ids": [],
+    "supporting_source_ids": ["FIX_SRC_A"],
+    "court_treatment": null,
+    "explanation": "Fixture explanation.",
+    "related_financial_amount_ids": ["FIX_FIN_1"]
+  }
+]

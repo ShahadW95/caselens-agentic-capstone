@@ -1,0 +1,52 @@
+[
+  {
+    "amount_id": "FIN_FICTITIOUS_STATEMENT_BALANCE_65B",
+    "amount_kind": "FICTITIOUS_STATEMENT_BALANCE",
+    "currency": "USD",
+    "value_or_range": "approximately USD 65 billion (aggregate fabricated client account-statement balances)",
+    "as_of_date": "2008-12-11",
+    "source_ids": ["SRC_DOJ_SDNY_CASEPAGE", "SRC_FBI_HISTORY"],
+    "measurement_note": "Aggregate paper value reported on fabricated BLMIS client statements; not cash placed with Madoff and not a verified loss figure. Must never be presented as equivalent to the SIPC-estimated principal loss.",
+    "proceeding_type": "CRIMINAL_CASE"
+  },
+  {
+    "amount_id": "FIN_ESTIMATED_PRINCIPAL_LOSS_17_5B",
+    "amount_kind": "ESTIMATED_PRINCIPAL_LOSS",
+    "currency": "USD",
+    "value_or_range": "approximately USD 17.5 billion",
+    "as_of_date": "2018-07-05",
+    "source_ids": ["SRC_SIPC_2018_RELEASE"],
+    "measurement_note": "SIPC's estimate of actual principal lost by customers who filed claims, net of withdrawals; distinct from the fictitious statement balance figure.",
+    "proceeding_type": "SIPA_LIQUIDATION"
+  },
+  {
+    "amount_id": "FIN_FORFEITURE_ORDER_SENTENCING",
+    "amount_kind": "FORFEITURE_ORDER",
+    "currency": "USD",
+    "value_or_range": "approximately USD 170 billion (in rem criminal forfeiture money judgment)",
+    "as_of_date": "2009-06-29",
+    "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"],
+    "measurement_note": "Forfeiture money judgment entered as part of the criminal sentencing; a legal judgment amount, not cash actually recovered or distributed to victims, and distinct from the SIPC principal-loss estimate and DOJ Victim Fund distributions.",
+    "proceeding_type": "CRIMINAL_CASE"
+  },
+  {
+    "amount_id": "FIN_SIPA_RECOVERY_2026",
+    "amount_kind": "RECOVERY",
+    "currency": "USD",
+    "value_or_range": "more than USD 14.7 billion recovered toward the approximately USD 17.5 billion estimated principal loss, continuing",
+    "as_of_date": "2026-02-27",
+    "source_ids": ["SRC_SIPC_2026_DISTRIBUTION"],
+    "measurement_note": "Cumulative SIPA liquidation trustee recovery toward satisfying customer claims, as most recently confirmed within this source pack's cutoff; not the same figure as the estimated principal loss itself and not to be summed with DOJ Victim Fund distributions.",
+    "proceeding_type": "SIPA_LIQUIDATION"
+  },
+  {
+    "amount_id": "FIN_DOJ_VICTIM_FUND_DISTRIBUTION",
+    "amount_kind": "DISTRIBUTION",
+    "currency": "USD",
+    "value_or_range": "more than USD 4.3 billion distributed across ten distribution rounds",
+    "as_of_date": "2026-02-27",
+    "source_ids": ["SRC_DOJ_VICTIM_FUND"],
+    "measurement_note": "Cumulative distributions from the separate DOJ Madoff Victim Fund, a distinct victim-compensation mechanism from the SIPA liquidation; as most recently confirmed within this source pack's cutoff; not to be summed with the SIPC recovery figure.",
+    "proceeding_type": "DOJ_VICTIM_FUND"
+  }
+]

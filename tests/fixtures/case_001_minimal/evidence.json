@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "FIX_EVID_1",
+    "label": "Fixture evidence",
+    "evidence_type": "document",
+    "introduced_or_reported_by": "Fixture body",
+    "supporting_source_ids": ["FIX_SRC_A"],
+    "related_claim_ids": ["FIX_CLAIM_1"],
+    "related_event_ids": ["FIX_EVT_1"],
+    "court_treatment_note": null,
+    "limitations": [],
+    "disputes": []
+  }
+]
