@@ -54,11 +54,13 @@ edge represents at most one correction and recheck.
 
 ## State and ownership
 
-The future typed state contains session/request fields, safe short-term
-messages, plans/tasks, retrieval rounds/references, specialist-owned findings,
-draft/review/final briefs, errors, counters, audit events, status, and completion
-reason. Input validation, Supervisor, specialists, Reviewer, and append-only
-reducers may write only their documented fields.
+The A1 `CaseLensState` is immutable and typed. It contains session/request and
+closed-case status, safe short-term messages, plans/tasks, retrieval
+rounds/references, specialist-owned findings, reserved draft/review/final brief
+slots, validation errors, retry/call/step/turn counters, audit events, workflow
+status, and completion reason. Input, memory, Supervisor, each specialist, and
+the future Reviewer can update only their explicit field sets. Messages,
+errors, audit events, and retrieval references use append-only reducers.
 
 ## Memory
 
@@ -103,7 +105,13 @@ Track A injects development fakes through the v1 protocols. Track B implements
 the same methods with real RAG/tools. Integration changes the adapter factory,
 not the graph or shared schemas.
 
-## A0 status
+## A1 routing skeleton status
 
-Contracts, protocols, provider shell, explicit fakes, and documentation exist.
-No LangGraph state or runtime workflow is implemented in A0.
+The deterministic pre-router validates all five modes. The Supervisor creates a
+strict mode-specific plan, executes only dependency-ready tasks through
+injected v1 fake adapters, and records validation, route, delegation, join,
+error, and completion events. Explain Judgment joins independent Evidence and
+Legal findings. What-If adds Evidence only when the plan explicitly requires
+premise validation. Turn, specialist-call, retry, and graph-step budgets stop
+safely. A2 remains responsible for the full LangGraph draft, bounded review,
+repair, and final-brief workflow.
