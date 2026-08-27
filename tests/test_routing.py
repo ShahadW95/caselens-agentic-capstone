@@ -11,7 +11,7 @@ from caselens.contracts import (
     SpecialistRole,
     WorkflowStatus,
 )
-from caselens.graph import run_routing_skeleton
+from caselens.graph import create_case_graph, run_routing_skeleton
 from caselens.state import (
     BudgetExceeded,
     StateOwner,
@@ -185,3 +185,21 @@ def test_specialists_are_invoked_only_by_the_coordinator() -> None:
     assert "evidence" not in vars(adapters.legal)
     assert "legal" not in vars(adapters.evidence)
     assert state.specialist_call_count == 2
+
+
+def test_a2_graph_exposes_explicit_workflow_nodes() -> None:
+    graph = create_case_graph(create_development_fake_adapters())
+
+    assert {
+        "validate_request",
+        "supervisor_plan",
+        "explain_evidence",
+        "explain_legal",
+        "join_findings",
+        "build_draft",
+        "editorial_review",
+        "bounded_correction",
+        "final_validation",
+        "complete",
+        "safe_stop",
+    }.issubset(graph.get_graph().nodes)

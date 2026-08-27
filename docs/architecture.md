@@ -18,7 +18,7 @@ Specialists do not call one another. The Supervisor owns the plan, delegation,
 join, and one response. The Reviewer performs one bounded review and adds no new
 facts.
 
-## Planned workflow
+## Implemented A2 workflow
 
 ```mermaid
 flowchart TD
@@ -41,8 +41,15 @@ flowchart TD
     T -->|Invalid or failed| S
 ```
 
-The final graph will prevent a second repair loop; the diagram's correction
-edge represents at most one correction and recheck.
+The compiled LangGraph prevents a second repair loop; the diagram's correction
+edge represents exactly zero or one correction followed by one recheck.
+
+Explain Judgment fans out to independent Evidence and Legal nodes and uses a
+barrier join. The development fakes share no dependency, so this is genuine
+parallel graph scheduling rather than decorative concurrency. Evidence-required
+What-If plans are sequential for a real reason: the Timeline/What-If node
+receives the completed evidence-validation task ID before simulating the
+allowed change.
 
 ## Reasoning patterns
 
@@ -105,13 +112,15 @@ Track A injects development fakes through the v1 protocols. Track B implements
 the same methods with real RAG/tools. Integration changes the adapter factory,
 not the graph or shared schemas.
 
-## A1 routing skeleton status
+## A2 complete fake-backed workflow status
 
 The deterministic pre-router validates all five modes. The Supervisor creates a
-strict mode-specific plan, executes only dependency-ready tasks through
-injected v1 fake adapters, and records validation, route, delegation, join,
-error, and completion events. Explain Judgment joins independent Evidence and
-Legal findings. What-If adds Evidence only when the plan explicitly requires
-premise validation. Turn, specialist-call, retry, and graph-step budgets stop
-safely. A2 remains responsible for the full LangGraph draft, bounded review,
-repair, and final-brief workflow.
+strict mode-specific plan and the compiled graph executes only selected nodes
+through injected v1 adapters. It joins findings without relabeling status or
+citations, builds a strict draft, performs deterministic and injected editorial
+review, allows one correction, validates the final contract, and completes or
+stops safely. Adapter exceptions and malformed outputs are bounded, completed
+states are idempotent, and turn, specialist-call, retry, correction, and
+graph-step budgets are enforced. All current runtime evidence remains offline
+and development-fake-backed; A4 will replace adapters without changing graph
+control flow.

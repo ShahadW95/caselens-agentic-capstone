@@ -77,6 +77,8 @@ class CaseLensState(BaseModel):
     retry_budget: int = Field(default=1, ge=0)
     graph_step_count: int = Field(default=0, ge=0)
     graph_step_budget: int = Field(default=12, ge=1)
+    review_attempt_count: int = Field(default=0, ge=0)
+    correction_count: int = Field(default=0, ge=0, le=1)
 
     short_term_messages: tuple[SafeMessage, ...] = ()
     plan: DelegationPlan | None = None
@@ -130,7 +132,13 @@ _OWNED_FIELDS: dict[StateOwner, frozenset[str]] = {
         {"timeline_finding", "counterfactual_finding"}
     ),
     StateOwner.REVIEWER: frozenset(
-        {"draft_brief", "review_result", "final_brief"}
+        {
+            "draft_brief",
+            "review_result",
+            "final_brief",
+            "review_attempt_count",
+            "correction_count",
+        }
     ),
 }
 
