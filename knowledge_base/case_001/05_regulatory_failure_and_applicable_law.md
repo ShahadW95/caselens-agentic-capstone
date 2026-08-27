@@ -2,7 +2,7 @@
 document_id: KB_CASE001_05_REGULATORY_FAILURE_LAW
 title: Regulatory Failure and Applicable Law
 case_id: US_SDNY_09CR00213_DC
-source_type: TEAM_DIGEST
+source_type: TEAM_DIGEST_REGULATORY_LAW
 source_tier: A
 jurisdiction: United States adversarial common-law system; federal criminal proceeding in S.D.N.Y.
 case_status: CLOSED_CRIMINAL_GUILTY_PLEA
@@ -54,6 +54,7 @@ asserted.
 ## Guidance for the Legal Explanation Specialist
 
 Keep `SEC_ENFORCEMENT` analytically distinct from `CRIMINAL_CASE`: the SEC's civil
-enforcement actions and the SEC OIG's regulatory-failure findings are a separate
-proceeding track from the criminal prosecution, plea, and sentencing, even though both
-concern the same underlying scheme.
+enforcement actions [SRC_SEC_2008_CIVIL_CHARGE] and the SEC OIG's regulatory-failure
+findings [SRC_SEC_OIG_REPORT] are a separate proceeding track from the criminal
+prosecution, plea, and sentencing [SRC_DOJ_SDNY_CASEPAGE], even though both concern the
+same underlying scheme.

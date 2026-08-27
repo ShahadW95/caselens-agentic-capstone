@@ -2,7 +2,7 @@
 document_id: KB_CASE001_06_VICTIM_RECOVERY_EDITORIAL
 title: Victim Recovery and Editorial Policy
 case_id: US_SDNY_09CR00213_DC
-source_type: TEAM_DIGEST
+source_type: TEAM_DIGEST_RECOVERY_EDITORIAL
 source_tier: A
 jurisdiction: United States adversarial common-law system; federal criminal proceeding in S.D.N.Y.
 case_status: CLOSED_CRIMINAL_GUILTY_PLEA

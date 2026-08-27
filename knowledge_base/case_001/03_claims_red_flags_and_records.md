@@ -2,7 +2,7 @@
 document_id: KB_CASE001_03_CLAIMS_RED_FLAGS
 title: Claims, Red Flags, and Fabricated Records
 case_id: US_SDNY_09CR00213_DC
-source_type: TEAM_DIGEST
+source_type: TEAM_DIGEST_CLAIMS_EVIDENCE
 source_tier: A
 jurisdiction: United States adversarial common-law system; federal criminal proceeding in S.D.N.Y.
 case_status: CLOSED_CRIMINAL_GUILTY_PLEA
