@@ -301,6 +301,7 @@ class UnchangedFact(_StrictModel):
 
 class AllowedChange(_StrictModel):
     change_id: StableId
+    event_id: StableId
     target_node_id: StableId
     label: NonEmptyText
     description: NonEmptyText
@@ -522,6 +523,11 @@ def load_case_pack(case_id: str, *, case_dir: Path | None = None) -> CasePack:
     _reject_cycles(adjacency)
 
     for change in causal_graph.allowed_changes:
+        if change.event_id not in known_events:
+            raise CaseLoaderError(
+                "DANGLING_REFERENCE_ID",
+                f"Allowed change '{change.change_id}' anchors to an unknown event.",
+            )
         if change.target_node_id not in known_nodes:
             raise CaseLoaderError(
                 "NON_ALLOWLISTED_CHANGE_TARGET",

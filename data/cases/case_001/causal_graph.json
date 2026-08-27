@@ -88,6 +88,7 @@
   "allowed_changes": [
     {
       "change_id": "CHG_INDEPENDENT_VERIFICATION_AFTER_COMPLAINT",
+      "event_id": "EVT_SCHEME_OPERATES_FOR_DECADES",
       "target_node_id": "CN_MISSED_VERIFICATION_OPPORTUNITY",
       "label": "Independent third-party verification of claimed trades after a documented regulatory complaint",
       "description": "Model an independent third-party verification of Madoff's claimed trading activity occurring after one of the documented SEC complaints or examinations, instead of the verification opportunity being missed.",

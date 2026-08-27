@@ -12,6 +12,7 @@
   "allowed_changes": [
     {
       "change_id": "FIX_CHG_1",
+      "event_id": "FIX_EVT_1",
       "target_node_id": "FIX_CN_1",
       "label": "Fixture change",
       "description": "Fixture description.",
