@@ -44,6 +44,8 @@ class TimelineEventSummary(BaseModel):
     track: TimelineTrack
     date_label: NonEmptyText
     event_date: date | None
+    start_date: date | None
+    end_date: date | None
     evidence_ids: tuple[StableId, ...]
     source_ids: tuple[StableId, ...]
 
@@ -139,6 +141,8 @@ def query_case_timeline(request: QueryCaseTimelineRequest, *, query_id: StableId
             track=e.track,
             date_label=e.date_label,
             event_date=e.event_date,
+            start_date=e.start_date,
+            end_date=e.end_date,
             evidence_ids=e.evidence_ids,
             source_ids=e.source_ids,
         )
