@@ -1,0 +1,93 @@
+[
+  {
+    "claim_id": "CLAIM_MADOFF_STOLE_65B_CASH",
+    "claim_text": "Madoff stole USD 65 billion in cash from investors.",
+    "speaker_or_party": "unknown",
+    "context": "A widely repeated popular claim about the scale of the fraud.",
+    "status": "CONTRADICTED",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": ["EVID_FABRICATED_CLIENT_RECORDS", "EVID_FBI_MECHANISM_SUMMARY_RECORD", "EVID_SIPC_PRINCIPAL_LOSS_ESTIMATE_RECORD"],
+    "supporting_source_ids": ["SRC_DOJ_SDNY_CASEPAGE", "SRC_FBI_HISTORY", "SRC_SIPC_2018_RELEASE"],
+    "court_treatment": null,
+    "explanation": "The ~USD 65 billion figure refers to the aggregate fictitious balance reported on fabricated BLMIS client statements, not cash actually placed with or stolen by Madoff. SIPC's own estimate of actual principal lost by customers who filed claims is approximately USD 17.5 billion, a materially different, separately sourced figure.",
+    "related_financial_amount_ids": ["FIN_FICTITIOUS_STATEMENT_BALANCE_65B", "FIN_ESTIMATED_PRINCIPAL_LOSS_17_5B"]
+  },
+  {
+    "claim_id": "CLAIM_MADOFF_GOV_OFFICIAL",
+    "claim_text": "Madoff was a government official.",
+    "speaker_or_party": "unknown",
+    "context": "A misconception sometimes drawn from Madoff's prominent industry standing.",
+    "status": "CONTRADICTED",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": ["EVID_FINRA_NASD_NASDAQ_ROLES_RECORD"],
+    "supporting_source_ids": ["SRC_FINRA_TESTIMONY", "SRC_SEC_OIG_TESTIMONY"],
+    "court_treatment": null,
+    "explanation": "Madoff held private securities-industry and self-regulatory-organization (SRO) roles, including NASD/NASDAQ positions, and participated in an SEC advisory committee. These are documented private-sector and SRO positions, not government employment.",
+    "related_financial_amount_ids": []
+  },
+  {
+    "claim_id": "CLAIM_SEC_RECEIVED_COMPLAINTS",
+    "claim_text": "The SEC received complaints and had opportunities to independently verify Madoff's claimed trading before the scheme's 2008 collapse.",
+    "speaker_or_party": "unknown",
+    "context": "Findings from the SEC OIG's post-collapse investigation.",
+    "status": "SUPPORTED",
+    "supporting_evidence_ids": ["EVID_SEC_OIG_COMPLAINTS_EXAMINATIONS"],
+    "contradicting_evidence_ids": [],
+    "supporting_source_ids": ["SRC_SEC_OIG_REPORT", "SRC_SEC_OIG_TESTIMONY"],
+    "court_treatment": null,
+    "explanation": "The SEC OIG documented that the SEC received complaints, conducted examinations, and had opportunities to independently verify Madoff's claimed trading activity that were not acted on before the scheme's collapse.",
+    "related_financial_amount_ids": []
+  },
+  {
+    "claim_id": "CLAIM_SEC_WAS_CORRUPT",
+    "claim_text": "The SEC was corrupt or bribed in connection with the Madoff case.",
+    "speaker_or_party": "unknown",
+    "context": "An escalated theory sometimes drawn from the SEC's documented failures.",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": [],
+    "supporting_source_ids": ["SRC_SEC_OIG_REPORT"],
+    "court_treatment": null,
+    "explanation": "No source in this pack supports corruption or bribery. The SEC OIG record documents institutional and procedural failure -- missed complaints and verification opportunities -- not intentional misconduct.",
+    "related_financial_amount_ids": []
+  },
+  {
+    "claim_id": "CLAIM_MADOFF_ACTED_ALONE",
+    "claim_text": "Madoff acted completely alone, with no other party ever facing scrutiny.",
+    "speaker_or_party": "unknown",
+    "context": "A framing question about the scope of individual versus institutional responsibility.",
+    "status": "PARTIALLY_SUPPORTED",
+    "supporting_evidence_ids": ["EVID_GUILTY_PLEA_RECORD"],
+    "contradicting_evidence_ids": ["EVID_AUDITOR_ACTION_RECORD"],
+    "supporting_source_ids": ["SRC_DOJ_SDNY_CASEPAGE", "SRC_SEC_2009_AUDITOR_ACTION"],
+    "court_treatment": null,
+    "explanation": "Madoff's own guilty plea establishes his own individual criminal liability for the scheme. Separately, the SEC's action concerning the purported BLMIS auditor shows that at least one other party faced regulatory scrutiny connected to the scheme's appearance of legitimacy. Neither fact implies that other BLMIS staff, family members, or feeder funds knew of the fraud.",
+    "related_financial_amount_ids": []
+  },
+  {
+    "claim_id": "CLAIM_ONLY_11_FELONY_COUNTS_NO_TRIAL",
+    "claim_text": "Madoff was convicted by a jury verdict at trial.",
+    "speaker_or_party": "unknown",
+    "context": "A common misconception about how the case concluded.",
+    "status": "CONTRADICTED",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": ["EVID_GUILTY_PLEA_RECORD"],
+    "supporting_source_ids": ["SRC_DOJ_SDNY_CASEPAGE"],
+    "court_treatment": null,
+    "explanation": "Madoff pleaded guilty, without a plea agreement, to all 11 federal felony counts on 2009-03-12. There was no jury trial and no jury verdict; the case concluded by admission, not by adjudication of contested evidence.",
+    "related_financial_amount_ids": []
+  },
+  {
+    "claim_id": "CLAIM_CRIMINAL_CASE_STILL_OPEN",
+    "claim_text": "The Madoff criminal case is still open or unresolved because victim distributions are ongoing.",
+    "speaker_or_party": "unknown",
+    "context": "A framing error that conflates the closed criminal case with ongoing recovery administration.",
+    "status": "CONTRADICTED",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": ["EVID_SENTENCING_RECORD", "EVID_DOJ_VICTIM_FUND_DISTRIBUTION_RECORD", "EVID_SIPC_2026_DISTRIBUTION_UPDATE_RECORD"],
+    "supporting_source_ids": ["SRC_DOJ_SDNY_CASEPAGE", "SRC_SIPC_2026_DISTRIBUTION", "SRC_DOJ_VICTIM_FUND"],
+    "court_treatment": null,
+    "explanation": "The criminal case (CRIMINAL_CASE) is closed as of the 2009-06-29 sentencing. SIPA liquidation and DOJ Victim Fund recovery are separate, ongoing proceedings with their own independent ProceedingStatus values; their ongoing status does not reopen or imply continued litigation of guilt or sentencing.",
+    "related_financial_amount_ids": ["FIN_SIPA_RECOVERY_2026", "FIN_DOJ_VICTIM_FUND_DISTRIBUTION"]
+  }
+]

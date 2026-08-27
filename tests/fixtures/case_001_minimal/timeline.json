@@ -1,0 +1,19 @@
+[
+  {
+    "event_id": "FIX_EVT_1",
+    "title": "Fixture event",
+    "summary": "A minimal fixture timeline event.",
+    "track": "CRIMINAL",
+    "date_precision": "EXACT",
+    "event_date": "2020-01-01",
+    "date_label": "2020-01-01",
+    "start_date": null,
+    "end_date": null,
+    "actor_ids": [],
+    "related_claim_ids": ["FIX_CLAIM_1"],
+    "evidence_ids": ["FIX_EVID_1"],
+    "source_ids": ["FIX_SRC_A"],
+    "certainty": "HIGH",
+    "fact_classification": "ESTABLISHED"
+  }
+]

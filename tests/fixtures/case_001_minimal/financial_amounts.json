@@ -1,0 +1,12 @@
+[
+  {
+    "amount_id": "FIX_FIN_1",
+    "amount_kind": "ESTIMATED_PRINCIPAL_LOSS",
+    "currency": "USD",
+    "value_or_range": "approximately USD 1",
+    "as_of_date": "2020-01-01",
+    "source_ids": ["FIX_SRC_A"],
+    "measurement_note": "Fixture measurement note.",
+    "proceeding_type": "CRIMINAL_CASE"
+  }
+]

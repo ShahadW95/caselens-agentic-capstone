@@ -2,7 +2,7 @@
 document_id: KB_CASE001_04_PLEA_CHARGES_SENTENCE
 title: Guilty Plea, Charges, and Sentence
 case_id: US_SDNY_09CR00213_DC
-source_type: TEAM_DIGEST
+source_type: TEAM_DIGEST_LEGAL_PLEA_SENTENCE
 source_tier: A
 jurisdiction: United States adversarial common-law system; federal criminal proceeding in S.D.N.Y.
 case_status: CLOSED_CRIMINAL_GUILTY_PLEA
@@ -23,11 +23,11 @@ evidence [SRC_DOJ_SDNY_CASEPAGE].
 
 ## Why the product's internal `EXPLAIN_VERDICT` mode is labeled "Explain the Judgment"
 
-Because there was no jury verdict, the UI-facing label for the internal `EXPLAIN_VERDICT`
-mode is **"Explain the Judgment"**, not "Explain the Verdict." The Legal Explanation
-Specialist must explain the charges, the guilty plea, and the court's sentencing judgment,
-and must never invent or imply a jury verdict, trial testimony, or trial evidentiary
-findings that did not occur.
+Because there was no jury verdict [SRC_DOJ_SDNY_CASEPAGE], the UI-facing label for the
+internal `EXPLAIN_VERDICT` mode is **"Explain the Judgment"**, not "Explain the Verdict."
+The Legal Explanation Specialist must explain the charges, the guilty plea, and the
+court's sentencing judgment, and must never invent or imply a jury verdict, trial
+testimony, or trial evidentiary findings that did not occur.
 
 ## The sentence
 
@@ -52,7 +52,7 @@ must never be conflated:
 ## Guidance for the Legal Explanation Specialist
 
 - Never predict an alternate outcome, alternate sentence, or alternate verdict; the guilty
-  plea and 150-year sentence are the actual, final, closed-case outcome.
+  plea and 150-year sentence are the actual, final, closed-case outcome [SRC_DOJ_SDNY_CASEPAGE].
 - Never conflate sentence, forfeiture order, and recovery/distribution figures, or present
   them as a single number.
 - Always state which of the three concepts a given answer addresses.

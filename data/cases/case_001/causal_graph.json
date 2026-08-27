@@ -1,0 +1,123 @@
+{
+  "nodes": [
+    {
+      "node_id": "CN_MISSED_VERIFICATION_OPPORTUNITY",
+      "node_type": "CONDITION",
+      "reference_id": "EVID_SEC_OIG_COMPLAINTS_EXAMINATIONS",
+      "label": "SEC received complaints and had opportunities to independently verify Madoff's claimed trading, but did not act on them before the collapse",
+      "source_ids": ["SRC_SEC_OIG_REPORT", "SRC_SEC_OIG_TESTIMONY"]
+    },
+    {
+      "node_id": "CN_FABRICATED_RECORDS",
+      "node_type": "EVIDENCE",
+      "reference_id": "EVID_FABRICATED_CLIENT_RECORDS",
+      "label": "Fabricated client statements and trade confirmations sustained the appearance of a legitimate operation",
+      "source_ids": ["SRC_SEC_2009_FABRICATED_RECORDS"]
+    },
+    {
+      "node_id": "CN_SCHEME_CONTINUES",
+      "node_type": "EVENT",
+      "reference_id": "EVT_SCHEME_OPERATES_FOR_DECADES",
+      "label": "The Ponzi scheme continues operating for decades",
+      "source_ids": ["SRC_FBI_HISTORY", "SRC_DOJ_SDNY_CASEPAGE"]
+    },
+    {
+      "node_id": "CN_SCHEME_COLLAPSES_2008",
+      "node_type": "EVENT",
+      "reference_id": "EVT_MADOFF_ARREST_DEC_2008",
+      "label": "The scheme collapses and Madoff is arrested (December 2008)",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    },
+    {
+      "node_id": "CN_GUILTY_PLEA",
+      "node_type": "EVENT",
+      "reference_id": "EVT_GUILTY_PLEA_2009_03_12",
+      "label": "Madoff pleads guilty to all 11 felony counts (2009-03-12)",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    },
+    {
+      "node_id": "CN_SENTENCING",
+      "node_type": "EVENT",
+      "reference_id": "EVT_SENTENCING_2009_06_29",
+      "label": "Madoff is sentenced to 150 years (2009-06-29)",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "EDGE_VERIFICATION_ENABLES_CONTINUATION",
+      "from_node_id": "CN_MISSED_VERIFICATION_OPPORTUNITY",
+      "to_node_id": "CN_SCHEME_CONTINUES",
+      "edge_type": "ENABLES",
+      "rationale": "Missed independent-verification opportunities documented by the SEC OIG allowed the fabricated trading narrative to continue unchallenged.",
+      "source_ids": ["SRC_SEC_OIG_REPORT"]
+    },
+    {
+      "edge_id": "EDGE_RECORDS_ENABLE_CONTINUATION",
+      "from_node_id": "CN_FABRICATED_RECORDS",
+      "to_node_id": "CN_SCHEME_CONTINUES",
+      "edge_type": "ENABLES",
+      "rationale": "Fabricated statements and trade confirmations sustained investor and regulator confidence.",
+      "source_ids": ["SRC_SEC_2009_FABRICATED_RECORDS"]
+    },
+    {
+      "edge_id": "EDGE_CONTINUATION_PRECEDES_COLLAPSE",
+      "from_node_id": "CN_SCHEME_CONTINUES",
+      "to_node_id": "CN_SCHEME_COLLAPSES_2008",
+      "edge_type": "PRECEDES",
+      "rationale": "The scheme's operation precedes its December 2008 collapse and Madoff's arrest.",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    },
+    {
+      "edge_id": "EDGE_COLLAPSE_PRECEDES_PLEA",
+      "from_node_id": "CN_SCHEME_COLLAPSES_2008",
+      "to_node_id": "CN_GUILTY_PLEA",
+      "edge_type": "PRECEDES",
+      "rationale": "The arrest precedes the March 2009 guilty plea.",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    },
+    {
+      "edge_id": "EDGE_PLEA_PRECEDES_SENTENCING",
+      "from_node_id": "CN_GUILTY_PLEA",
+      "to_node_id": "CN_SENTENCING",
+      "edge_type": "PRECEDES",
+      "rationale": "The guilty plea precedes the June 2009 sentencing.",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+    }
+  ],
+  "allowed_changes": [
+    {
+      "change_id": "CHG_INDEPENDENT_VERIFICATION_AFTER_COMPLAINT",
+      "event_id": "EVT_SCHEME_OPERATES_FOR_DECADES",
+      "target_node_id": "CN_MISSED_VERIFICATION_OPPORTUNITY",
+      "label": "Independent third-party verification of claimed trades after a documented regulatory complaint",
+      "description": "Model an independent third-party verification of Madoff's claimed trading activity occurring after one of the documented SEC complaints or examinations, instead of the verification opportunity being missed.",
+      "direct_effects": [
+        {
+          "node_id": "CN_SCHEME_CONTINUES",
+          "description": "The fabricated trading narrative could have faced an earlier, independent challenge instead of continuing unchallenged."
+        }
+      ],
+      "downstream_possible_effects": [
+        "Detection of the fabricated trading records could possibly have occurred earlier than December 2008, though no specific earlier date is established by this source pack.",
+        "The scope of additional investor losses accumulated after the missed verification opportunity could possibly have been reduced, though no specific avoided-loss amount is established."
+      ],
+      "unchanged_facts": [
+        {
+          "text": "Madoff's own guilty plea and criminal liability for operating the scheme are established facts independent of this hypothetical.",
+          "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+        },
+        {
+          "text": "The 150-year sentence imposed on 2009-06-29 is the actual, final outcome of the real case and is not altered by this hypothetical.",
+          "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"]
+        }
+      ],
+      "unknowns": [
+        "The exact earlier detection date, if any, cannot be determined from this source pack.",
+        "Whether independent third-party verification would have been technically or procedurally feasible at that time is not established.",
+        "Any alternate sentence, forfeiture amount, or legal outcome cannot be inferred from this hypothetical."
+      ],
+      "mandatory_hypothetical_disclaimer": "This is a bounded educational hypothetical about detection likelihood, not a prediction, guarantee, or alternate legal verdict."
+    }
+  ]
+}

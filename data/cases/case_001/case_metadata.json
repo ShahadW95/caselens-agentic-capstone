@@ -1,0 +1,72 @@
+{
+  "case_id": "US_SDNY_09CR00213_DC",
+  "display_title": "United States v. Bernard L. Madoff",
+  "jurisdiction": "United States adversarial common-law system; federal criminal proceeding in the U.S. District Court for the Southern District of New York (S.D.N.Y.)",
+  "court": "U.S. District Court, Southern District of New York",
+  "case_status": "CLOSED_CRIMINAL_GUILTY_PLEA",
+  "final_status_source_ids": ["SRC_DOJ_SDNY_CASEPAGE"],
+  "key_dates": {
+    "guilty_plea_date": "2009-03-12",
+    "sentencing_date": "2009-06-29"
+  },
+  "synopsis": "Bernard Madoff operated a decades-long Ponzi scheme through Bernard L. Madoff Investment Securities LLC (BLMIS), fabricating client account statements and trade confirmations behind a purported split-strike-conversion options strategy. He pleaded guilty without a plea agreement to all 11 federal felony counts on 2009-03-12 and was sentenced to 150 years on 2009-06-29.",
+  "legal_outcome_summary": "Guilty plea to all 11 felony counts; no jury trial or verdict occurred. Sentenced to 150 years in federal prison. Separate SEC civil enforcement, SIPA liquidation, and DOJ Victim Fund proceedings carry their own independent statuses and are not part of the closed criminal case.",
+  "dataset_version": "0.1.0",
+  "last_reviewed": "2026-08-27",
+  "editorial_warnings": [
+    "Never present the ~USD 65 billion fictitious statement balance and the ~USD 17.5 billion estimated principal loss as interchangeable figures.",
+    "CRIMINAL_CASE status is closed; SIPA_LIQUIDATION and DOJ_VICTIM_FUND status are ongoing/post-conviction context and must carry independent ProceedingStatus values.",
+    "Madoff was not a government official; do not characterize his private NASD/NASDAQ/SRO roles or SEC advisory participation as government employment, bribery, or conspiracy absent a cited source."
+  ],
+  "scope_exclusions": [
+    "dramatizations",
+    "podcasts",
+    "unsourced biographies",
+    "social-media theories",
+    "personality diagnosis",
+    "sensational victim stories"
+  ],
+  "proceedings": [
+    {
+      "proceeding_id": "PROC_CRIMINAL_CASE",
+      "case_id": "US_SDNY_09CR00213_DC",
+      "proceeding_type": "CRIMINAL_CASE",
+      "status": "CLOSED_FINAL",
+      "status_as_of": "2009-06-29",
+      "source_ids": ["SRC_DOJ_SDNY_CASEPAGE"],
+      "status_note": "Criminal case closed following sentencing on 2009-06-29; Madoff's 2021 death in custody does not reopen it."
+    },
+    {
+      "proceeding_id": "PROC_SEC_ENFORCEMENT",
+      "case_id": "US_SDNY_09CR00213_DC",
+      "proceeding_type": "SEC_ENFORCEMENT",
+      "status": "CLOSED_FINAL",
+      "status_as_of": "2009-09-10",
+      "source_ids": [
+        "SRC_SEC_2008_CIVIL_CHARGE",
+        "SRC_SEC_2009_FABRICATED_RECORDS",
+        "SRC_SEC_2009_AUDITOR_ACTION",
+        "SRC_SEC_OIG_TESTIMONY"
+      ],
+      "status_note": "SEC's 2008-2009 civil enforcement actions cited in this source pack (initial charge, fabricated-records action, auditor action) were resolved by the actions themselves; this pack's most recent documented enforcement-related date is the 2009-09-10 OIG testimony."
+    },
+    {
+      "proceeding_id": "PROC_SIPA_LIQUIDATION",
+      "case_id": "US_SDNY_09CR00213_DC",
+      "proceeding_type": "SIPA_LIQUIDATION",
+      "status": "ONGOING_RECOVERY",
+      "status_as_of": "2026-02-27",
+      "source_ids": ["SRC_SIPC_2026_DISTRIBUTION"],
+      "status_note": "SIPA liquidation and customer-claims distribution process remains ongoing as of the most recent SIPC update in this source pack; independent of, and does not reopen, the closed criminal case."
+    },
+    {
+      "proceeding_id": "PROC_DOJ_VICTIM_FUND",
+      "case_id": "US_SDNY_09CR00213_DC",
+      "proceeding_type": "DOJ_VICTIM_FUND",
+      "status": "ONGOING_RECOVERY",
+      "status_as_of": "2026-02-27",
+      "source_ids": ["SRC_DOJ_VICTIM_FUND"],
+      "status_note": "DOJ Madoff Victim Fund distributions remain ongoing, confirmed as most recent within this source pack's 2026-02-27 cutoff; independent of, and does not reopen, the closed criminal case."
+    }
+  ]
+}

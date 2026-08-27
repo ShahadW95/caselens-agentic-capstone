@@ -2,7 +2,7 @@
 document_id: KB_CASE001_01_OVERVIEW
 title: Case Overview and Ponzi Mechanism
 case_id: US_SDNY_09CR00213_DC
-source_type: TEAM_DIGEST
+source_type: TEAM_DIGEST_OVERVIEW
 source_tier: A
 jurisdiction: United States adversarial common-law system; federal criminal proceeding in S.D.N.Y.
 case_status: CLOSED_CRIMINAL_GUILTY_PLEA

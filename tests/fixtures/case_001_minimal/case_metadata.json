@@ -1,0 +1,26 @@
+{
+  "case_id": "US_SDNY_09CR00213_DC",
+  "display_title": "Fixture Case",
+  "jurisdiction": "Fixture jurisdiction",
+  "court": "Fixture Court",
+  "case_status": "CLOSED_FIXTURE",
+  "final_status_source_ids": ["FIX_SRC_A"],
+  "key_dates": {"milestone": "2020-01-01"},
+  "synopsis": "A minimal fixture case for offline loader/validator tests.",
+  "legal_outcome_summary": "Fixture outcome summary.",
+  "dataset_version": "0.0.1-fixture",
+  "last_reviewed": "2026-08-27",
+  "editorial_warnings": [],
+  "scope_exclusions": [],
+  "proceedings": [
+    {
+      "proceeding_id": "FIX_PROC_1",
+      "case_id": "US_SDNY_09CR00213_DC",
+      "proceeding_type": "CRIMINAL_CASE",
+      "status": "CLOSED_FINAL",
+      "status_as_of": "2020-01-01",
+      "source_ids": ["FIX_SRC_A"],
+      "status_note": "Fixture proceeding."
+    }
+  ]
+}
