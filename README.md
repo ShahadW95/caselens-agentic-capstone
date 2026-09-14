@@ -4,10 +4,11 @@ CASE//LENS is a source-grounded multi-agent research and learning assistant for
 understanding one curated closed case through cited evidence, legal explanation,
 timeline analysis, claim checking, and bounded What-If exploration.
 
-> Checkpoint status: **A0 foundation implemented.** Contracts, protocols,
-> guardrails, offline tests, and a minimal keyless Streamlit checkpoint exist.
-> State, orchestration, memory, case content, RAG, tools, real specialists, and
-> the complete workbench remain planned work.
+> Checkpoint status: **A3 functional workbench implemented.** The bilingual,
+> fake-backed Streamlit path now exercises typed state, short-term memory, all
+> five dynamic routes, bounded review, cited result panels, safe trace, errors,
+> duplicate prevention, and reset. Real Track B adapters and final visual design
+> remain deferred to their named checkpoints.
 
 ## Course and academy acknowledgement
 
